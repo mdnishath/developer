@@ -5,9 +5,9 @@ import Image from "./Image";
 
 const Navbar = () => {
   return (
-    <div className="sm:px-4">
+    <div className="px-4 sm:px-0">
       <Container>
-        <div className="grid h-[9vh] gap-2 px-4 py-4 sm:grid-cols-navbar sm:items-center sm:gap-0 sm:py-4 sm:px-0">
+        <div className="grid gap-2 px-4 py-4 sm:h-[9vh] sm:grid-cols-navbar sm:items-center sm:gap-0 sm:py-4 sm:px-0">
           <div className="">
             <Link to="/">
               <Image className="w-10" link="images/logo.svg" />
