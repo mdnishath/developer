@@ -1,6 +1,16 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
+
+.vtr {
+  /* @apply writing-mode: horizontal-tb|vertical-rl|vertical-lr; */
+  writing-mode: vertical-rl;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply bg-dark-secondery;
+}

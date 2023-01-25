@@ -4,10 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bg-dark": "#0a192f",
-        "bg-light": "#F5F7F9",
-        primary: "#64FFDA",
-        secondery: "#112240",
+        "dark-primary": "#0A192F",
+        "dark-secondery": "#112240",
+        "dark-third": "#8f9199",
+        "dark-text-2": "#d5cfcf",
+        "dark-text": "#EBF0FE",
+        primary: "#64ffda",
+        secondery:"#a5aece"
       },
       maxWidth: {
         container: "1280px",
@@ -26,5 +29,18 @@ module.exports = {
       work: ["Work Sans", "system-ui"],
     },
   },
-  plugins: [],
+  // add daisyUI plugin
+  plugins: [require("daisyui")],
+
+  // daisyUI config (optional)
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
 };
