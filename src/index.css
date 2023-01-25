@@ -12,5 +12,5 @@ body {
 @tailwind utilities;
 
 .active {
-  @apply bg-dark-secondery;
+  @apply bg-primary font-semibold text-dark-primary hover:!bg-primary;
 }

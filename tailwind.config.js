@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
+      backgroundImage: {
+        bg: "linear-gradient(180deg, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.9164040616246498) 60%),url('../public/images/bg.svg')",
+      },
       colors: {
         "dark-primary": "#0A192F",
         "dark-secondery": "#112240",
@@ -10,7 +13,7 @@ module.exports = {
         "dark-text-2": "#d5cfcf",
         "dark-text": "#EBF0FE",
         primary: "#64ffda",
-        secondery:"#a5aece"
+        secondery: "#a5aece",
       },
       maxWidth: {
         container: "1280px",
