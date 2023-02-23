@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Container from "./Container";
+import { motion, AnimatePresence } from "framer-motion";
 import MobileMenu from "./MobileMenu";
+import HoverAnimation from "./HoverAnimation";
 
 const Navbar = () => {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -28,7 +29,7 @@ const Navbar = () => {
       {isMobile ? (
         <MobileMenu />
       ) : (
-        <div className="absolute w-full py-4  lg:px-[100px]">
+        <div className="absolute z-[100] w-full  py-4 lg:px-[100px]">
           <div className="navbar px-0 ">
             <div className="flex-1">
               <div className="w-[150px]">
@@ -42,11 +43,13 @@ const Navbar = () => {
                     Home
                   </NavLink>
                 </li>
+
                 <li>
                   <NavLink to="/about" className="hover:bg-dark-primary">
                     About
                   </NavLink>
                 </li>
+
                 <li>
                   <NavLink to="/skils" className="hover:bg-dark-primary">
                     Skills

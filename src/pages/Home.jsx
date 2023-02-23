@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Container from "../components/Container";
 import Info from "../components/Info";
 import Layout from "../components/Layout";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const data = useSelector((state) => state);
@@ -34,9 +35,14 @@ const Home = () => {
               Firebase, Figma, Bootstrap, and Tailwind CSS.
             </p>
             <div className="flex justify-center">
-              <button className="btn mt-5 border-primary bg-transparent hover:border-primary hover:bg-transparent">
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                }}
+                className="btn mt-5 border-primary bg-transparent hover:border-primary hover:bg-transparent"
+              >
                 Checkout My Projects
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
